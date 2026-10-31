@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-ivory: #F8F5EC;
+    --bg-cream: #FFFDF7;
+    --color-sage: #A6B49A;
+    --color-forest: #344D3D;
+    --color-dusty: #D8A6A3;
+    --color-sky: #B7D0E1;
+    --color-ocean: #739E9C;
+    --color-brown: #8B7562;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-ivory);
+    color: var(--color-forest);
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F8F5EC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C5D0BC;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A6B49A;
+  }
+}
+
+/* Paper grain overlay subtle pattern */
+.paper-texture {
+  background-color: #F8F5EC;
+  background-image: radial-gradient(#E8E2D5 0.75px, transparent 0.75px), radial-gradient(#F3EEE4 0.75px, #F8F5EC 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.notebook-paper {
+  background-color: #FFFDF7;
+  background-image: 
+    linear-gradient(rgba(166, 180, 154, 0.15) 1px, transparent 1px);
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+/* Subtle cloud drift */
+@keyframes cloudDriftSlow {
+  0% { transform: translateX(-5%); }
+  50% { transform: translateX(5%); }
+  100% { transform: translateX(-5%); }
+}
+
+.animate-cloud-drift {
+  animation: cloudDriftSlow 32s ease-in-out infinite;
+}
+
+/* Gentle sway */
+@keyframes gentleSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.animate-sway {
+  animation: gentleSway 7s ease-in-out infinite;
+}
+
+/* Gentle wave motion */
+@keyframes waveMotion {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.animate-wave {
+  animation: waveMotion 4s ease-in-out infinite;
+}
+
