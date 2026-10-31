@@ -9,6 +9,8 @@
 ## 📖 Overview
 **"A Little World of Rai"** is a custom, artistic, responsive digital storybook built to celebrate Rai's birthday. It reflects her personality, creative poetry journey, deep connection with clouds, mountains, and the sea, independent approach to learning, and love of simple, everyday joys.
 
+**Live Link:** [https://rswarke1972-art.github.io/SreeJi/](https://rswarke1972-art.github.io/SreeJi/)
+
 The design is rooted in warm ivory tones, soft sage greens, dusty floral accents, and paper-grain textures with restrained typography and gentle animations.
 
 ---
